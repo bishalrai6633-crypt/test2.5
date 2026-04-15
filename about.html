@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Images/fevicon.png">
+    <title>CommonGround</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+       <nav>
+
+         <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="" ></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="about.html" title="About us">About Us</a></li>
+            <li><a href="services.html" title="Our services">Services</a></li>
+            <li><a href="#contact" title="Contact information">Contact</a></li>
+            <li><a href="mailto:bishalrai6633@gmail.com" title="Email us">Email Us</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html" title="Home page"><img src="Images/logo2.png" alt="CommonGround Logo" style="width: 250px;" id="logo"></a></li>
+            <li class="hideonmbile"><a href="index.html" title="Home page">Home</a></li>
+            <li class="hideonmbile"><a href="about.html" title="About us">About Us</a></li>
+            <li class="hideonmbile"><a href="services.html" title="Our services">Services</a></li>
+            <li class="hideonmbile"><a href="#contact" title="Contact information">Contact</a></li>
+            <li class="hideonmbile"><a href="mailto:bishalrai6633@gmail.com" title="Email us">Email Us</a></li>
+            <li class="menubutton" onclick="showsidebar()"><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+        </ul>
+
+
+
+
+    </nav>
+
+    <script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hidesidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+
+    </script>   
+
+    
+
+    <img src="ups.png" alt="cozy room." height="550px" id="img1">
+   
+  
+
+    
+                
+    <h1>About Us</h1>
+    <p>Welcome to our community hub! We are dedicated to fostering a supportive and engaging environment for all members. Our mission is to connect people, share knowledge, and create opportunities for growth and collaboration.</p>
+    <p>Our team is made up of passionate individuals who are committed to making a positive impact in our community. We believe in the power of connection and strive to provide resources and support to help our members thrive.</p>
+    <p>Thank you for being a part of our community. We look forward to growing together and making a difference!</p>
+          
+    <footer>
+        <p>&copy; 2024 Community Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
