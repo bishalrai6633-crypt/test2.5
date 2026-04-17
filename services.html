@@ -6,7 +6,7 @@
     <title>Services</title>
     <link rel="icon" type="image/png" href="Images/fevicon.png">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -14,11 +14,11 @@
   
     <nav>
 
-         <ul class="sidebar">
+        <ul class="sidebar">
             <li onclick=hidesidebar()><a href="" ></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
             <li><a href="about.html" title="About us">About Us</a></li>
             <li><a href="services.html" title="Our services">Services</a></li>
-            <li><a href="#contact" title="Contact information">Contact</a></li>
+            <li><a href="contact us.html" title="Contact information">Contact</a></li>
             <li><a href="mailto:bishalrai6633@gmail.com" title="Email us">Email Us</a></li>
         </ul>
 
@@ -27,7 +27,7 @@
             <li class="hideonmbile"><a href="index.html" title="Home page">Home</a></li>
             <li class="hideonmbile"><a href="about.html" title="About us">About Us</a></li>
             <li class="hideonmbile"><a href="services.html" title="Our services">Services</a></li>
-            <li class="hideonmbile"><a href="#contact" title="Contact information">Contact</a></li>
+            <li class="hideonmbile"><a href="contact us.html" title="Contact information">Contact</a></li>
             <li class="hideonmbile"><a href="mailto:bishalrai6633@gmail.com" title="Email us">Email Us</a></li>
             <li class="menubutton" onclick="showsidebar()"><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
         </ul>
@@ -50,18 +50,48 @@
 
     </script>
 
-    <main>
-    <section id="services">
-        <h1>Our Services</h1>
-        <p>We offer a variety of services to support our community members, including:</p>
-        <ul>
-            <li><strong>Community Events:</strong> Regular events and workshops to foster connection and learning.</li>
-            <li><strong>Resource Sharing:</strong> A platform for members to share resources, tools, and opportunities.</li>
-            <li><strong>Support Groups:</strong> Safe spaces for members to connect and support each other.</li>
-            <li><strong>Mentorship Programs:</strong> Opportunities for members to mentor and be mentored by others in the community.</li>
-        </ul>
-    </section>
-    </main>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-desc"> We provide a wide range of services to support and strengthen our community. </p>
+<div class="services-cards"> 
+    <div class="service-card" data-service="Community Events"> 
+        <i class="fas fa-users"></i> <h3>Community Events</h3> <p>Workshops and events to build strong connections.</p>
+     </div> <div class="service-card" data-service="Support Groups"> <i class="fas fa-hand-holding-heart"></i> 
+        <h3>Support Groups</h3> <p>Safe spaces for sharing and emotional support.</p> 
+    </div> <div class="service-card" data-service="Healthcare Support"> 
+        <i class="fas fa-user-md"></i> <h3>Healthcare Support</h3> 
+        <p>Access to health services and awareness programs.</p> </div> 
+        <div class="service-card" data-service="Mental Health Support"> 
+            <i class="fas fa-brain"></i> <h3>Mental Health</h3> <p>Counseling and wellbeing sessions.</p> </div> <div class="service-card" data-service="Career Support"> <i class="fas fa-briefcase"></i> <h3>Career Support</h3> <p>Job help, CV building, and training.</p> </div> <div class="service-card" data-service="Mentorship Program"> <i class="fas fa-chalkboard-teacher"></i> <h3>Mentorship</h3> <p>Learn from experienced community mentors.</p> </div> </div>
+
+
+
+<!-- BOOKING SECTION -->
+<section class="booking">
+    <h2>Book a Service</h2>
+    <p>Schedule a session with us</p>
+
+    <form class="booking-form" action="booking.php" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <select name="service" id="serviceSelect" required>
+            <option value="">Select Service</option>
+            <option>Healthcare Support</option>
+            <option>Mental Health Support</option>
+            <option>Mentorship Program</option>
+            <option>Community Event</option>
+            <option>Support Groups</option>
+            <option>Career Support</option>
+        </select>
+
+        <input type="date" name="date" required>
+
+        <button type="submit" class="btn primary">Book Now</button>
+    </form>
+</section>
+
+</main>
+
     <footer>
         <p>&copy; 2024 Community Hub. All rights reserved.</p>
     </footer>
