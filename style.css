@@ -64,10 +64,10 @@
             position: fixed;
             top: 0;
             right: 0;
-            height: 100vh;
+            height: 400px;
             width: 250px;
             z-index: 999;
-            background-color: rgba(255, 255, 255, 0.178);
+            background-color: rgba(130, 150, 160, 0.096);
             backdrop-filter: blur(10px);
             box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
             display: none;
@@ -546,17 +546,16 @@
 }
 
 
-
-        @media screeen and (max-width: 768px) {
-            nav a, section, .hero, .services,.about-story, .mission, .values-cards, .team-cards {
+ @media screeen and (max-width: 768px) {
+     nav a, section, .hero, .services,.about-story, .mission, .values-cards, .team-cards {
                 float: none;
                 display: block;
                 text-align: left;
             }
            
-        }
+        }   
 
-        @media (max-width: 800px) {
+@media (max-width: 800px) {
             .hideonmbile {
                 display: none;
             }
